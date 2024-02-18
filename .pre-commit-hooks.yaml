@@ -1,0 +1,8 @@
+  - repo: git@github.com:awslabs/automated-security-helper.git
+    rev: '1.1.0-e-01Dec2023' # update with the latest tagged version in the repository
+    hooks:
+    - id: ash
+      name: scan files using ash
+      stages: [ manual ]
+      # uncomment the line below if using "finch" on MacOS
+      # args: [ "-f" ]
